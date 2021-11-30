@@ -15,7 +15,7 @@ gc = gspread.service_account(filename='')
 sh = gc.open_by_key('')
 worksheet = sh.sheet1
 
-# Built-in command for ls
+# Built-in command for ls and will probably be removed in the future since ls is pretty OPSEC safe
 def cmd_ls(directory):
 # desired directory path
      my_input = directory 
